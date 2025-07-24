@@ -46,5 +46,5 @@ jobs:
           git init
           git add -A
           git commit -m "Create by workflows"
-          git remote add origin https://github.com/liujiaming20040905/Myblog.git
+          git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/liujiaming20040905/Myblog.git
           git push origin HEAD:gh-pages -f
